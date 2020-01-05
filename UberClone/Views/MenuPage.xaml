@@ -7,7 +7,7 @@
              Title="Menu" BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout>
-        <Grid BackgroundColor="Black"
+        <Grid BackgroundColor="White"
                       HeightRequest="230"
                       RowSpacing="15"
                       x:Name="layout"
@@ -29,7 +29,7 @@
                     </Grid.ColumnDefinitions>
                     
                     <controls:CircleImage Source="{Binding Source={x:Static model:User.UserImage}}"
-                                          BorderColor="Gray"
+                                          BorderColor="Black"
                                           BorderThickness="2"
                                           Aspect="AspectFill"
                                           WidthRequest="70"
@@ -43,7 +43,7 @@
                            VerticalOptions="EndAndExpand"
                            Grid.Row="0" 
                            Grid.Column="1"
-                           TextColor="White" 
+                           TextColor="Black" 
                            Style="{StaticResource HeaderMenuLabel}"
                            FontAttributes="Bold"  />
                     
@@ -61,34 +61,56 @@
                              Grid.Column="0"
                              Grid.ColumnSpan="2"/>
                     
-                    <Label Text="Do more with your account"
+                    <!--<Label Text="Do more with your account"
                            Grid.Row="3"
                            Grid.Column="0"
                            Grid.ColumnSpan="2"
                            Style="{StaticResource HeaderMenuLabel}"
-                           TextColor="Gray" />
+                           TextColor="Gray" />-->
                     
-                     <Label Text="Get food delivery"
+                     <!--<Label Text="Edit Profile"
                            Grid.Row="4"
                            Grid.Column="0"
                            Grid.ColumnSpan="2"
                            Style="{StaticResource HeaderMenuLabel}"
-                           TextColor="White"  />
+                           TextColor="Black"  />
                     
-                     <Label Text="Make money driving"
+                     <Label Text="Car Details"
                            Grid.Row="5"
                            Grid.Column="0"
                            Grid.ColumnSpan="2"
                            Style="{StaticResource HeaderMenuLabel}"
-                           TextColor="White" />
-                </Grid>
-                <StackLayout Padding="20,20,0,0" Spacing="20" BackgroundColor="White">
-                    <Label Text="Your Trips" Style="{StaticResource MenuLabel}" />
-                    <Label Text="Help" Style="{StaticResource MenuLabel}" />
-                    <Label Text="Payment" Style="{StaticResource MenuLabel}" />
-                    <Label Text="Free Rides" Style="{StaticResource MenuLabel}" />
-                    <Label Text="Settings" Style="{StaticResource MenuLabel}" />
+                           TextColor="Black" />
+
+                <Label Text="Driver Details"
+                           Grid.Row="6"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Style="{StaticResource HeaderMenuLabel}"
+                           TextColor="Black" />
+            
+                <Label Text="Car Details"
+                           Grid.Row="5"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Style="{StaticResource HeaderMenuLabel}"
+                           TextColor="Black" />
+
+                <Label Text="Car Details"
+                           Grid.Row="5"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Style="{StaticResource HeaderMenuLabel}"
+                           TextColor="Black" />-->
+                <StackLayout Grid.Row="3" Padding="20,20,0,0" Spacing="20" BackgroundColor="White">
+                    <Label Text="Edit Details" Style="{StaticResource MenuLabel}" />
+                    <Label Text="Car Details" Style="{StaticResource MenuLabel}" />
+                    <Label Text="Driver Details" Style="{StaticResource MenuLabel}" />
+                    <Label Text="Ride History" Style="{StaticResource MenuLabel}" />
+                    <Label Text="Offers" Style="{StaticResource MenuLabel}" />
                 </StackLayout>
+            </Grid>
+                
 
         </StackLayout>
     </ContentPage.Content>
